@@ -17,8 +17,9 @@ docker build -t parts/app .
 
 # run the server (for demonstration purposes it will run migrations and seeding):
 docker run -p 3000:3000 -v $(pwd):/app parts/app
-# run the tests:
+# run the tests and the linter:
 docker run -p 3000:3000 -v $(pwd):/app parts/app rspec
+docker run -p 3000:3000 -v $(pwd):/app parts/app rake check:parts
 
 # get a full shell
 docker run -p 3000:3000 -v (pwd):/app -ti parts/app -- /bin/bash
