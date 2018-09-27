@@ -1,0 +1,18 @@
+%h1 Hello from the core part!
+
+%p
+  Some models:
+  = @organizations.collect(&:name).join(', ')
+
+%p
+  An asset:
+  = image_tag 'checkmark.svg', width: '300'
+
+%p
+  A locale string:
+  = t('thing')
+
+%p
+  Want to see some
+  = link_to 'plants', plants_path
+  ?
