@@ -1,5 +1,7 @@
 # Rails in Parts
 
+Please read [the article](http://tomrothe.de/posts/rails_parts.html).
+
 ## Docker
 
 We use Docker for running a reproducible development environment across the team's laptops.
